@@ -1,0 +1,30 @@
+:host {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .mz-new-game-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: calc(70vh * (513 / 385));
+    height: 70vh;
+    min-width: 580px;
+    min-height:  435px;
+    padding: 40px 100px;
+    background-image: url('../../../../assets/images/bg-cloud.svg');
+    background-size: cover;
+  }
+
+  header {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  .mz-logo {
+    width: 80%;
+    height: auto;
+  }
+}

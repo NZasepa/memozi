@@ -1,0 +1,70 @@
+@keyframes spin {
+  0% {
+    transform: translateY(-50%) translateX(-50%) rotateZ(0);
+  }
+
+  100% {
+    transform: translateY(-50%) translateX(-50%) rotateZ(360deg);
+  }
+}
+
+@keyframes spinOpposite {
+  0% {
+    transform: translateY(-50%) translateX(-50%) rotateZ(0);
+  }
+
+  100% {
+    transform: translateY(-50%) translateX(-50%) rotateZ(-360deg);
+  }
+}
+
+:host {
+  .mz-start-background {
+    position: fixed;
+    display: block;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    z-index: -1;
+
+    .mz-bg-first,
+    .mz-bg-second,
+    .mz-bg-third {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 120vw;
+      height: 120vw;
+      transform-origin: center center;
+    }
+
+    .mz-bg-first {
+      animation: spin 40s linear infinite;
+    }
+
+    .mz-bg-second {
+      animation: spin 60s linear infinite;
+      opacity: 0.4;
+    }
+
+    .mz-bg-third {
+      animation: spinOpposite 80s linear infinite;
+      opacity: 0.2;
+    }
+
+    //&::before {
+    //  content: ' ';
+    //  position: absolute;
+    //  top: 50%;
+    //  left: 0;
+    //  right: 0;
+    //  bottom: 0;
+    //  width: 100vw;
+    //  height: 100vw;
+    //  background-image: url('../assets/images/bg-first.svg');
+    //  transform-origin: center center;
+    //  animation: spin 30s linear infinite;
+    //  z-index: -1;
+    //}
+  }
+}

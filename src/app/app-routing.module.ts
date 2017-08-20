@@ -4,7 +4,12 @@ import { Routes, RouterModule } from '@angular/router';
 const routes: Routes = [
   {
     path: '',
-    children: []
+    redirectTo: 'start',
+    pathMatch: 'full'
+  },
+  {
+    path: 'start',
+    loadChildren: 'app/views/start/start.module#StartModule'
   }
 ];
 
