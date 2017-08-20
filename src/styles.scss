@@ -9,20 +9,62 @@ body {
   background-color: #0072FA;
 }
 
+/*
+  Utils
+ */
 .chewy {
   font-family: 'Chewy', cursive;
 }
 
+.mz-btn {
+  background: none;
+  border: none;
+  box-shadow: none;
+}
+
+/*
+  Header
+ */
 header.main-header {
-  h1 {
-    margin: 0;
+  height: 130px;
+  padding: 15px 0;
+  text-align: center;
+
+  .mz-logo {
+    height: 100px;
+    width: auto;
   }
 }
 
+/*
+  Footer
+ */
 footer.main-footer {
   position: absolute;
   bottom: 15px;
   left: 0;
   right: 0;
   text-align: center;
+}
+
+.mz-footer-note {
+  color: #ffffff;
+}
+
+/*
+  Start module
+ */
+.mz-new-game-container {
+  .mz-btn {
+    font-size: 40px;
+    color: #0066e0;
+    text-shadow: 1px 1px #c5c5c5;
+    transition: color .2s ease-in-out;
+    outline: none;
+    cursor: pointer;
+
+    &:hover {
+      color: #318fff;
+    }
+  }
 }
