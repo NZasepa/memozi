@@ -55,10 +55,25 @@ footer.main-footer {
   Start module
  */
 .mz-new-game-container {
+  position: relative;
+  top: -50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: calc(60vh * (513 / 385));
+  height: 60vh;
+  min-width: 580px;
+  min-height:  435px;
+  padding: 40px 100px;
+  background-image: url('./assets/images/bg-cloud.svg');
+  background-size: cover;
+
   .mz-btn {
     font-size: 40px;
     color: #0066e0;
     text-shadow: 1px 1px #c5c5c5;
+    text-decoration: none;
     transition: color .2s ease-in-out;
     outline: none;
     cursor: pointer;
