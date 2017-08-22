@@ -10,6 +10,10 @@ const routes: Routes = [
   {
     path: 'start',
     loadChildren: 'app/views/start/start.module#StartModule'
+  },
+  {
+    path: 'game',
+    loadChildren: 'app/views/game/game.module#GameModule'
   }
 ];
 
